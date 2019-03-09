@@ -1,7 +1,7 @@
-NAME="ArcoLinux"
-ID=ArcoLinux
+NAME="ViolaLinux"
+ID=ViolaLinux
 ID_LIKE="arch"
-VERSION_ID=v19.03.3
+VERSION_ID=VERSION_NUMBER
 ANSI_COLOR="0;36"
-HOME_URL="https://arcolinux.info"
-SUPPORT_URL="http://arcolinuxforum.com"
+HOME_URL="https://github.com/katabame/Viola-linux"
+SUPPORT_URL="https://github.com/katabame/Viola-linux"
