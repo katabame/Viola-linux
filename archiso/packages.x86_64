@@ -1,7 +1,6 @@
-#######################
-##     ArcoLinux      ##
-#######################
-
+#########################
+## ArcoLinux
+#########################
 arch-install-scripts
 broadcom-wl
 btrfs-progs
@@ -63,13 +62,13 @@ wvdial
 xl2tpd
 
 
-#xorg packages
+## xorg packages
 xorg-server
 xorg-apps
 xorg-xinit
 xterm
 
-#video
+## video
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard
@@ -85,23 +84,23 @@ xf86-video-openchrome
 xf86-video-vesa
 xf86-video-vmware
 
-#hardware video support
+## hardware video support
 mesa
 
-#base and base-devel
+## base and base-devel
 base-devel
 
-#vbox or vmware
+## vbox or vmware
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
-#packages for installer
+## packages for installer
 os-prober
 
-#LUKS encryption
+## LUKS encryption
 cryptsetup
 
-#audio
+## audio
 alsa-firmware
 alsa-plugins
 alsa-lib
@@ -117,7 +116,7 @@ pulseaudio
 pulseaudio-alsa
 pavucontrol
 
-#bluetooth
+## bluetooth
 blueberry
 bluez
 bluez-libs
@@ -125,7 +124,7 @@ bluez-utils
 bluez-firmware
 pulseaudio-bluetooth
 
-#network
+## network
 avahi
 nss-mdns
 mobile-broadband-provider-info
@@ -140,7 +139,7 @@ networkmanager-dispatcher-ntpd
 openresolv
 wpa_supplicant
 
-#file management
+## file management
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -153,7 +152,7 @@ udiskie
 udisks2
 xdg-user-dirs
 
-#printers
+## printers
 cups
 cups-filters
 cups-pdf
@@ -166,12 +165,12 @@ libcups
 splix
 system-config-printer
 
-#printer extra for hplip
+## printer extra for hplip
 python-pillow
 python-pip
 python-reportlab
 
-#tumbler
+## tumbler
 tumbler
 ffmpegthumbnailer
 freetype2
@@ -180,11 +179,11 @@ libopenraw
 poppler-glib
 poppler-qt5
 
-###########################
+#########################
 #Software from Arch repo's
-###########################
+#########################
 
-#applications
+## applications
 feh
 geany
 imagemagick
@@ -195,7 +194,7 @@ termite
 variety
 vlc
 
-#fonts
+## fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 noto-fonts
@@ -203,17 +202,17 @@ ttf-dejavu
 ttf-droid
 ttf-roboto
 
-#lightdm
+## lightdm
 accountsservice
 lightdm
 
-#openbox
+## openbox
 gtk-engine-murrine
 
-#themes
+## themes
 arc-gtk-theme
 
-#utilities
+## utilities
 arandr
 bash-completion
 dconf-editor
@@ -255,24 +254,24 @@ youtube-dl
 zenity
 
 
-#############################
-#arcolinux_repo_iso 3th party
-#############################
+#########################
+## arcolinux_repo_iso 3th party
+#########################
 
-#applications
+## applications
 vivaldi
 vivaldi-codecs-ffmpeg-extra-bin
 
-#cursor
+## cursor
 xcursor-breeze
 
-#icons
-sardi-icons
+## icons
+#sardi-icons
 
-#tools
+## tools
 mkinitcpio-openswap
 
-#utilities
+## utilities
 conky-lua-archers
 downgrade
 grub-customizer
@@ -286,9 +285,9 @@ trizen
 yad
 yay-bin
 
-#############################
-#arcolinux_repo for arcolinux
-
+#########################
+## arcolinux_repo for arcolinux
+#########################
 arcolinux-bin-git
 arcolinux-config-deepin-git
 arcolinux-conky-collection-git
@@ -308,8 +307,8 @@ arcolinux-variety-git
 arcolinux-wallpapers-git
 arcolinux-xfce-thunar-git
 
-#xfce4 also for ArcoLinuxB iso builds
-#xfce4 group content
+## xfce4 also for ArcoLinuxB iso builds
+## xfce4 group content
 exo
 thunar
 xfce4-panel
@@ -318,10 +317,10 @@ xfdesktop
 xfwm4
 
 
-#xfce4-goodies group content
+## xfce4-goodies group content
 thunar-archive-plugin
 
-#Needed for Calamares installer
+## Needed for Calamares installer
 calamares
 arcolinux-system-installation-git
 arcolinuxb-calamares-deepin-git
@@ -341,11 +340,16 @@ plasma-framework
 hwinfo
 qt5-xmlpatterns
 
-#Desktop specific
+## Desktop specific
 deepin
 deepin-extra
 dtkwidget
 
-#https://github.com/linuxdeepin/developer-center/issues/544
-#adding linux-headers for error at boot - deepin-anything seems to be responsible
+## https://github.com/linuxdeepin/developer-center/issues/544
+## Adding linux-headers for error at boot - deepin-anything seems to be responsible
 linux-headers
+
+## Viola-linux
+nautilus
+flat-remix-git
+flat-remix-gtk
