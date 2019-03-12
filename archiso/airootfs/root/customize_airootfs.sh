@@ -134,9 +134,50 @@ function getNewMirrorCleanAndUpgrade()
 	echo "#####   Function getNewMirrorCleanAndUpgrade done    #####"
 }
 
-#function installTheme() {
-#	yay -S --noconfirm flat-remix-gtk
-#}
+function installPackages()
+{
+	# File Manager
+	pacman -S --noconfirm nautilus
+
+	# VisualStudio Code
+	pacman -S --noconfirm code
+
+	# Opera
+	pacman -S --noconfirm opera opera-ffmpeg-codecs
+}
+
+function installAurPackages()
+{
+	# Make sure needed packages are installed
+	pacman -S --noconfirm git
+
+	# Theme
+	git clone https://aur.archlinux.org/flat-remix-git.git ~/flat-remix-git
+	cd ~/flat-remix-git
+	makepkg -si
+
+	# Icon
+	git clone https://aur.archlinux.org/flat-remix-gtk.git ~/flat-remix-gtk
+	cd ~/flat-remix-gtk
+	makepkg -si
+
+	# Mega
+	git clone https://aur.archlinux.org/megasync.git ~/megasync
+	cd ~/flat-remix-gtk
+	makepkg -si
+
+	# Mega Extention
+	git clone https://aur.archlinux.org/nautilus-megasync.git ~/nautilus-megasync
+	cd ~/nautilus-megasync
+	makepkg -si
+
+	# GitKraken
+	git clone https://aur.archlinux.org/gitkraken.git ~/gitkraken
+	cd ~/gitkraken
+	makepkg -si
+}
+
+
 
 echo
 echo "##########################################################"
@@ -155,6 +196,8 @@ fixWifi
 fixHibernate
 initkeys
 getNewMirrorCleanAndUpgrade
+installPackages
+installAurPackages
 echo "##########################################################"
 echo "##########################################################"
 echo

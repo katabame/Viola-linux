@@ -348,8 +348,3 @@ dtkwidget
 ## https://github.com/linuxdeepin/developer-center/issues/544
 ## Adding linux-headers for error at boot - deepin-anything seems to be responsible
 linux-headers
-
-## Viola-linux
-nautilus
-flat-remix-git
-flat-remix-gtk
